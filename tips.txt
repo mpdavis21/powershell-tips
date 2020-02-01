@@ -1,9 +1,10 @@
 
 #change the time zone of a system
+
 tzutil /s "UTC"
 tzutil /s "Eastern Standard Time"
 
+
 # connect to a remote system
-200~Connect to a remote system
 
 Enter-PSSession “ServerName”
