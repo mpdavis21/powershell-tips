@@ -1,0 +1,2 @@
+change the time zone of a system
+tzutil /s "UTC"
