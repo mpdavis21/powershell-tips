@@ -8,3 +8,20 @@ tzutil /s "Eastern Standard Time"
 # connect to a remote system
 
 Enter-PSSession “ServerName”
+
+
+#
+
+Use unique $variables as your building blocks
+
+$Variable1 = 1
+$Variable2 = 2
+$Variable3 = $Variable1 + $Variable2
+"Result: $Variable3"
+
+– Variables are used to store & manipulate data
+– Use at the start of a script as building blocks
+– Remove repetitive hardcoded strings
+– Increase flexibility, easier to re-use & change
+– Store results, perform calculations etc
+– Don’t overwrite variables, it’s usually better to use new
