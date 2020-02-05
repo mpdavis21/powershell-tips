@@ -25,3 +25,10 @@ $Variable3 = $Variable1 + $Variable2
 – Increase flexibility, easier to re-use & change
 – Store results, perform calculations etc
 – Don’t overwrite variables, it’s usually better to use new
+
+# This powershell script will collect all the machine accounts in AD and place them in file.
+
+Get-ADComputer -Filter * -Properties * |
+ Select -Property Name,DNSHostName,Enabled,LastLogonDate | 
+ Export-CSV "C:\\AdvocareComputers.csv" -NoTypeInformation -Encoding UTF8
+
