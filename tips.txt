@@ -32,3 +32,6 @@ Get-ADComputer -Filter * -Properties * |
  Select -Property Name,DNSHostName,Enabled,LastLogonDate | 
  Export-CSV "C:\\AdvocareComputers.csv" -NoTypeInformation -Encoding UTF8
 
+# how to get a users last login date (replace username with the users account)
+Get-ADUser -Identity “username” -Properties “LastLogonDate”
+
